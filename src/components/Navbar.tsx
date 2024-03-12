@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className=" flex justify-center items-center lg:bg-gray-400 md:bg-slate-600 sm:bg-slate-800 bg-black h-[100px]">
+    <div className=" flex justify-center items-center h-[100px]">
       <div className=" flex justify-between items-center w-[80%] ">
         <div className="font-bold text-3xl text-white">Gift Sibiya</div>
 
@@ -56,7 +56,7 @@ const Navbar = () => {
       <div
         className={
           openNav
-            ? " absolute md:hidden top-0 h-[250px] w-full  bg-slate-800"
+            ? " absolute md:hidden top-0 h-[200px] w-full bg-black rounded-b-2xl "
             : "hidden"
         }
       >
