@@ -7,7 +7,7 @@ import setupPic from "../../public/assets/images/mySetup.jpg";
 
 const About = () => {
   return (
-    <div className=" sm:flex justify-around  border-2 sm:h-[270px] h-[430px] mt-[200px]">
+    <div className=" sm:flex justify-around  sm:h-[270px] h-[430px] mt-[200px]">
       <div className=" sm:flex sm:w-[100%] sm:items-center sm:justify-around">
         <div className="text-center text-white sm:mt-[20px] font-semibold sm:text-2xl text-4xl mt-[35px] z-[50]">
           About Me
