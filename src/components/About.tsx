@@ -12,7 +12,7 @@ const About = () => {
         <div className="text-center text-white sm:mt-[20px] font-semibold sm:text-2xl text-4xl mt-[35px] z-[50]">
           About Me
         </div>
-        <div className="text-center text-white sm:mt-[20px] font-semibold text-2xl mt-[60px] z-[50]">
+        <div className="text-center text-white sm:mt-[20px] font-semibold text-2xl mt-[100px] border-2 h-[300px] z-[50]">
           Stuff Here
         </div>
       </div>

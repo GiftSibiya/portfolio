@@ -8,12 +8,14 @@ import RightProject from "@/modules/RightProject";
 
 const Projects = () => {
   return (
-    <div>
-      <div className="flex-col">
-        <h3 className="text-white text-center text-4xl mt-[30px]">Projects</h3>
+    <div className="h-[5800px]">
+      <div className="flex-col ">
+        <h3 className="text-white text-center text-4xl mt-[40px] ">Projects</h3>
 
         {/* Mobile App Projects */}
-        <p className="text-white text-center text-lg mt-[20px]">
+        <hr className="mt-[30px] w-[90%] m-auto " />
+
+        <p className="text-white text-center text-lg mt-[20px] mb-[140px]">
           Mobile Applications
         </p>
 
@@ -33,8 +35,10 @@ const Projects = () => {
           projectStack={["HTML", "CSS", "JavaScript", "TypeScript"]}
         />
         {/* -- */}
-        {/* Mobile App Projects */}
-        <p className="text-white text-center text-lg mt-[20px]">
+        {/* Web Applications Projects */}
+        <hr className="mt-[150px] w-[90%] mx-auto " />
+
+        <p className="text-white text-center text-lg mt-[20px] mb-[-100px]">
           Web Applications
         </p>
 
@@ -56,7 +60,10 @@ const Projects = () => {
 
         {/* -- */}
         {/* Website */}
-        <p className="text-white text-center text-lg mt-[20px]">Websites</p>
+        <hr className=" w-[90%] mx-auto mt-[-70px] " />
+        <p className="text-white text-center text-lg mt-[20px] mb-[150px]">
+          Websites
+        </p>
 
         <LeftProject
           projectName="Testing Project"

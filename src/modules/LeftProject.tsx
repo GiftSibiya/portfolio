@@ -28,15 +28,18 @@ const LeftProject = ({
   projectStack,
 }: LeftProjectProps) => {
   return (
-    <div className="flex justify-center items-center h-[350px] mt-[20px]">
-      <div className=" flex justify-between w-[90%] ">
-        <div className=" w-[50%] border-2 lg:h-[350px]">Left Side Is Here</div>
-        <div className="w-[400px]">
+    <div className="flex justify-center items-center h-[350px] my-[80px]">
+      <div className="flex border-2 flex-col sm:flex-row justify-between w-[90%] ">
+        <div className="w-full sm:w-[50%] border-2 sm:h-[350px] h-[350px] ">
+          Left Side is over Here
+        </div>
+        <div className="sm:flex sm:flex-col sm:items-center sm:justify-center sm:w-[50%] w-400px">
           <h4 className="text-white text-2xl text-center">{projectName}</h4>
           <p className="text-sm text-white my-[20px] text-center">
             {projectDescription}
           </p>
-          <div className="flex items-center border-2 h-[100px] justify-between ">
+          <div className="flex items-center border-2 h-[100px] sm:w-[80%] justify-between">
+            {/* Project Stack Icons */}
             {projectStack.map((stack) => {
               switch (stack) {
                 case "HTML":
@@ -111,6 +114,7 @@ const LeftProject = ({
                   return null;
               }
             })}
+            {/* -- */}
           </div>
         </div>
       </div>
