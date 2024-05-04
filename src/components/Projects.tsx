@@ -20,18 +20,18 @@ const Projects = () => {
         </p>
 
         <LeftProject
-          projectName="Testing Project"
-          projectDescription=" Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.    "
+          projectName="Taxi Rank Finder"
+          projectDescription=" Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
           projectStack={["HTML", "CSS", "JavaScript", "TypeScript"]}
         />
         <RightProject
           projectName="Testing Project"
-          projectDescription=" Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.    "
+          projectDescription=" Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
           projectStack={["HTML", "CSS", "JavaScript", "TypeScript"]}
         />
         <LeftProject
           projectName="Testing Project"
-          projectDescription=" Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.    "
+          projectDescription=" Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
           projectStack={["HTML", "CSS", "JavaScript", "TypeScript"]}
         />
         {/* -- */}
