@@ -8,7 +8,7 @@ import RightProject from "@/modules/RightProject";
 
 const Projects = () => {
   return (
-    <div className="h-[5800px]">
+    <div className="h-[3800px]">
       <div className="flex-col ">
         <h3 className="text-white text-center text-4xl mt-[40px] ">Projects</h3>
 
@@ -58,28 +58,6 @@ const Projects = () => {
           projectStack={["HTML", "CSS", "JavaScript", "TypeScript"]}
         />
 
-        {/* -- */}
-        {/* Website */}
-        <hr className=" w-[90%] mx-auto mt-[-70px] " />
-        <p className="text-white text-center text-lg mt-[20px] mb-[150px]">
-          Websites
-        </p>
-
-        <LeftProject
-          projectName="Testing Project"
-          projectDescription=" Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.    "
-          projectStack={["HTML", "CSS", "JavaScript", "TypeScript"]}
-        />
-        <RightProject
-          projectName="Testing Project"
-          projectDescription=" Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.    "
-          projectStack={["HTML", "CSS", "JavaScript", "TypeScript"]}
-        />
-        <LeftProject
-          projectName="Testing Project"
-          projectDescription=" Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.    "
-          projectStack={["HTML", "CSS", "JavaScript", "TypeScript"]}
-        />
         {/* -- */}
       </div>
     </div>

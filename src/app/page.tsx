@@ -1,4 +1,4 @@
-// Imports
+//============= Imports ============//
 
 // Files
 import Navbar from "@/components/Navbar";
@@ -8,6 +8,7 @@ import Projects from "@/components/Projects";
 import Footer from "@/components/Footer";
 import Contact from "@/components/Contact";
 
+// ============ function ============ //
 export default function Home() {
   return (
     <main className="">
