@@ -24,18 +24,12 @@ import flutterIcon from "../../public/assets/icons/icons8-flutter-48.png";
 
 const Header = () => {
   return (
-    <div className="flex justify-center h-[750px] sm:h-[350px] sm:mt-[30px] ">
+    <div className="flex justify-center h-[350px]">
       <div className=" flex sm:flex-row flex-col sm:justify-between items-center w-[90%]">
         <div className="text-3xl font-bold  text-white w-[80vw] mt-[90px] sm:mt-0  sm:w-[50%]">
           <h1 className="text-center">Hi, I&apos;m Gift Sibiya</h1>
           <p className="mt-2 w-[80vw] sm:w-[50vw] text-center">
             Full-Stack JS / TS Mobile & Web Developer
-          </p>
-          <p className="lg:text-[20px] md:text-[15px] sm:text-[14px] text-[5vw] font-normal my-3 text-center">
-            I am a full stack web & mobile developer with a background in
-            Electrical Engineering based in Midrand, South Africa with extensive
-            experience working and adapting to frontend and backend tech stacks
-            from javascript to ASP.NET CRUD applications.
           </p>
           <div className="grid grid-cols-7 gap-y-[20px] rounded-md bg-white sm:p-5 py-3 mt-[20px] sm:w-[600px]">
             <Image
