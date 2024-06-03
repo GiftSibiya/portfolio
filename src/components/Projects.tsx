@@ -6,6 +6,8 @@ import React from "react";
 import LeftProject from "@/modules/LeftProject";
 import RightProject from "@/modules/RightProject";
 
+// Images 
+
 const Projects = () => {
   return (
     <div className="h-[3800px]">
@@ -14,19 +16,19 @@ const Projects = () => {
 
         {/* Mobile App Projects */}
         <hr className="mt-[30px] w-[90%] m-auto " />
-
-
         {/* Web Applications Projects */}
-        <hr className="mt-[150px] w-[90%] mx-auto " />
+       
+
         <p className="text-white text-center text-lg mt-[20px] mb-[-100px]">
           Web Applications
         </p>
 
         <RightProject
           projectName="Driving School Hub"
-          projectDescription=" A Custom built system for managing your driving school students, fleet and schedules.    "
+          projectDescription=" A Custom built system for managing your driving school students, fleet and schedules."
           projectStack={["HTML", "CSS", "JavaScript", "TypeScript"]}
-        />
+          image ="drivngSchoolGif"
+          />
         <LeftProject
           projectName="e procure"
           projectDescription=" Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.    "
@@ -36,10 +38,10 @@ const Projects = () => {
           projectName="Legend Task"
           projectDescription=" Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.    "
           projectStack={["HTML", "CSS", "JavaScript", "TypeScript"]}
+          image ="drivngSchoolGif"
         />
-
         {/* -- */}
-        
+        <hr className="mt-[150px] w-[90%] mx-auto " />
         <p className="text-white text-center text-lg mt-[20px] mb-[140px]">
           Mobile Applications
         </p>
@@ -56,6 +58,8 @@ const Projects = () => {
           talented, and capable individuals—all at your fingertips. Our innovative technology simplifies talent discovery with user-friendly 
           taps on the screen, offering a seamless and efficient approach to connecting with the best candidates for your needs"
           projectStack={["HTML", "Tailwind", "JavaScript", "React" ]}
+          image ="drivngSchoolGif"
+
         />
         <LeftProject
           projectName="Sneke"
