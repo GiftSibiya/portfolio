@@ -18,6 +18,8 @@ import firebaseIcon from "../../public/assets/icons/icons8-firebase-48.png";
 
 //images
 import drivngSchoolGif from "../../public/assets/images/gifs/drivingSchoolHUb.gif"
+import eProcureGif from "../../public/assets/images/gifs/eProcure.gif"
+
 
 const iconStyle = ` w-[50px] h-[50px] transition duration-600 ease-in-out hover:scale-150`;
 
@@ -25,14 +27,14 @@ interface RightProjectProps {
   projectName: string;
   projectDescription: string;
   projectStack: string[];
-  image: string;
+  imageString: string[];
 }
 
 const RightProject = ({
   projectName,
   projectDescription,
   projectStack,
-  image,
+  imageString,
 }: RightProjectProps) => {
   return (
     <div className="flex justify-center items-center h-[350px] my-[250px]">
@@ -85,7 +87,18 @@ const RightProject = ({
           </div>
         </div>
         <div className=" w-full sm:w-[50%] border-2 sm:h-[350px] h-[350px] ">
-          <Image src={drivngSchoolGif} alt="Driving School" className={image}></Image>
+        {imageString.map((gifImage) => {
+              switch (gifImage) {
+                case "drivngSchool":
+                  return (
+                    <Image src={drivngSchoolGif} alt="html" className="w-full h-full"></Image>);
+                case "eProcure":
+                  return (
+                    <Image src={eProcureGif} alt="CSS" className="w-full h-full"></Image>);
+                default:
+                  return null;
+              }
+            })}
         </div>
       </div>
     </div>

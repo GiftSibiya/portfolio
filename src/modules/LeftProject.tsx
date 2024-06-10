@@ -14,24 +14,41 @@ import nextIcon from "../../public/assets/icons/icons8-nextjs-48.png";
 import sqlIcon from "../../public/assets/icons/icons8-mysql-48.png";
 import mongoIcon from "../../public/assets/icons/MongoDB-48.png";
 
+
+import drivngSchoolGif from "../../public/assets/images/gifs/drivingSchoolHUb.gif"
+import eProcureGif from "../../public/assets/images/gifs/eProcure.gif"
+
 const iconStyle = ` w-[50px] h-[50px] transition duration-600 ease-in-out hover:scale-150`;
 
 interface LeftProjectProps {
   projectName: string;
   projectDescription: string;
   projectStack: string[];
+  imageString: string[];
 }
 
 const LeftProject = ({
   projectName,
   projectDescription,
   projectStack,
+  imageString,
 }: LeftProjectProps) => {
   return (
     <div className="flex justify-center items-center h-[350px] my-[80px]">
       <div className="flex border-2 flex-col sm:flex-row justify-between w-[90%] ">
         <div className="w-full sm:w-[50%] border-2 sm:h-[350px] h-[350px] ">
-          Left Side is over Here
+        {imageString.map((gifImage) => {
+              switch (gifImage) {
+                case "drivngSchool":
+                  return (
+                    <Image src={drivngSchoolGif} alt="html" className="w-full h-full"></Image>);
+                case "eProcure":
+                  return (
+                    <Image src={eProcureGif} alt="CSS" className="w-full h-full"></Image>);
+                default:
+                  return null;
+              }
+            })}
         </div>
         <div className="sm:flex sm:flex-col sm:items-center sm:justify-center sm:w-[50%] w-400px">
           <h4 className="text-white text-2xl text-center">{projectName}</h4>
@@ -42,42 +59,11 @@ const LeftProject = ({
             {/* Project Stack Icons */}
             {projectStack.map((stack) => {
               switch (stack) {
-                case "HTML":
-                  return (
-                    <Image
-                      src={htmlIcon}
-                      alt="html"
-                      className={iconStyle}
-                    ></Image>
-                  );
-                case "CSS":
-                  return (
-                    <Image
-                      src={cssIcon}
-                      alt="CSS"
-                      className={iconStyle}
-                    ></Image>
-                  );
-                case "JavaScript":
-                  return (
-                    <Image
-                      src={JSIcon}
-                      alt="Javascript"
-                      className={iconStyle}
-                    ></Image>
-                  );
-                case "TypeScript":
-                  return (
-                    <Image
-                      src={TSIcon}
-                      alt="TypeScript"
-                      className={iconStyle}
-                    ></Image>
-                  );
-                case "C#":
-                  return (
-                    <Image src={cSharp} alt="C#" className={iconStyle}></Image>
-                  );
+                case "HTML": return ( <Image src={htmlIcon} alt="html" className={iconStyle}></Image>);
+                case "CSS":return ( <Image src={cssIcon} alt="CSS" className={iconStyle}></Image>);
+                case "JavaScript": return ( <Image src={JSIcon} alt="Javascript" className={iconStyle} ></Image>);
+                case "TypeScript": return ( <Image src={TSIcon} alt="TypeScript" className={iconStyle} ></Image> );
+                case "C#": return ( <Image src={cSharp} alt="C#" className={iconStyle}></Image> );
                 case "React":
                   return (
                     <Image
