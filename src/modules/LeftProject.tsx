@@ -17,6 +17,8 @@ import mongoIcon from "../../public/assets/icons/MongoDB-48.png";
 
 import drivngSchoolGif from "../../public/assets/images/gifs/drivingSchoolHUb.gif"
 import eProcureGif from "../../public/assets/images/gifs/eProcure.gif"
+import artisanFinderGif from "../../public/assets/images/gifs/artisan.gif"
+import snekeGif from "../../public/assets/images/gifs/sneke.gif"
 
 const iconStyle = ` w-[50px] h-[50px] transition duration-600 ease-in-out hover:scale-150`;
 
@@ -45,6 +47,12 @@ const LeftProject = ({
                 case "eProcure":
                   return (
                     <Image src={eProcureGif} alt="CSS" className="w-full h-full"></Image>);
+                case "artisanFinder":
+                  return (
+                    <Image src={artisanFinderGif} alt="Artisan Finder" className="w-full h-full"></Image>);
+                    case "snekeGif":
+                      return (
+                        <Image src={snekeGif} alt="Sneke" className="w-[180px] h-full"></Image>);
                 default:
                   return null;
               }

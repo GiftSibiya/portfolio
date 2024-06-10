@@ -38,7 +38,7 @@ const Projects = () => {
           projectName="Legend Task"
           projectDescription=" Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.    "
           projectStack={["HTML", "CSS", "JavaScript", "TypeScript"]}
-          imageString ={["eProcure"]}
+          imageString ={["legendTask"]}
         />
         {/* -- */}
         <hr className="mt-[150px] w-[90%] mx-auto " />
@@ -59,14 +59,14 @@ const Projects = () => {
           talented, and capable individuals—all at your fingertips. Our innovative technology simplifies talent discovery with user-friendly 
           taps on the screen, offering a seamless and efficient approach to connecting with the best candidates for your needs"
           projectStack={["HTML", "Tailwind", "JavaScript", "React" ]}
-          imageString ={["drivngSchoolGif"]}
+          imageString ={["artisanFinder"]}
         />
         <LeftProject
           projectName="Sneke"
           projectDescription=" Engage in a UI and front-end challenge for a food and snack app. A quick, e-commerce-ready template, 
           designed to elevate the user experience, perfect for culinary enthusiasts exploring delicious offerings."
           projectStack={["HTML", "CSS", "JavaScript", "TypeScript"]}
-          imageString ={["drivngSchoolGif"]}
+          imageString ={["snekeGif"]}
         />
         {/* -- */}
       </div>

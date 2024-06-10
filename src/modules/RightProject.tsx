@@ -19,6 +19,9 @@ import firebaseIcon from "../../public/assets/icons/icons8-firebase-48.png";
 //images
 import drivngSchoolGif from "../../public/assets/images/gifs/drivingSchoolHUb.gif"
 import eProcureGif from "../../public/assets/images/gifs/eProcure.gif"
+import legendTask from "../../public/assets/images/gifs/legendTask.gif"
+import artisanFinderGif from "../../public/assets/images/gifs/artisan.gif"
+
 
 
 const iconStyle = ` w-[50px] h-[50px] transition duration-600 ease-in-out hover:scale-150`;
@@ -91,10 +94,17 @@ const RightProject = ({
               switch (gifImage) {
                 case "drivngSchool":
                   return (
-                    <Image src={drivngSchoolGif} alt="html" className="w-full h-full"></Image>);
+                    <Image src={drivngSchoolGif} alt="Driving School Application" className="w-full h-full"></Image>);
                 case "eProcure":
                   return (
-                    <Image src={eProcureGif} alt="CSS" className="w-full h-full"></Image>);
+                    <Image src={eProcureGif} alt=" E Procure" className="w-full h-full"></Image>);
+                case "legendTask":
+                  return (
+                    <Image src={legendTask} alt="Legend Task" className="w-full h-full"></Image>);
+                case "artisanFinder":
+                  return (
+                    <Image src={artisanFinderGif} alt="Artisan Finder" className="w-[200px] h-full"></Image>);
+               
                 default:
                   return null;
               }
