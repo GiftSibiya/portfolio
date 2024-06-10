@@ -19,6 +19,7 @@ import drivngSchoolGif from "../../public/assets/images/gifs/drivingSchoolHUb.gi
 import eProcureGif from "../../public/assets/images/gifs/eProcure.gif"
 import artisanFinderGif from "../../public/assets/images/gifs/artisan.gif"
 import snekeGif from "../../public/assets/images/gifs/sneke.gif"
+import localGif from "../../public/assets/images/gifs/local.gif"
 
 const iconStyle = ` w-[50px] h-[50px] transition duration-600 ease-in-out hover:scale-150`;
 
@@ -50,9 +51,12 @@ const LeftProject = ({
                 case "artisanFinder":
                   return (
                     <Image src={artisanFinderGif} alt="Artisan Finder" className="w-full h-full"></Image>);
-                    case "snekeGif":
-                      return (
-                        <Image src={snekeGif} alt="Sneke" className="w-[180px] h-full"></Image>);
+                case "snekeGif":
+                  return (
+                    <Image src={snekeGif} alt="Sneke" className="w-[180px] h-full"></Image>);
+                case "localGif":
+                  return (
+                    <Image src={localGif} alt="Sneke" className="w-[180px] h-full"></Image>);
                 default:
                   return null;
               }
